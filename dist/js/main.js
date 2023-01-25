@@ -45,9 +45,9 @@ for (const i of galleryBtn) {
 
 galleryLink.forEach(function(choiceItem) {
     choiceItem.addEventListener('click', function(event) {
-        for (const i of galleryBlock) {
+        galleryBlock.forEach(function() {
             i.classList.remove("active")
-        }
+        })
         galleryLink.forEach(function(i) {
             i.classList.remove("active")
         })
@@ -85,20 +85,11 @@ menuBurger.addEventListener("click", function(e) {
     : (document.body.style.overflow = "auto");
 })
 
-console.log(menuLink)
-
 for (const link of menuLink) {
     link.addEventListener("click", function(e) {
         e.preventDefault();
         if(link.classList.contains("menu__link--surfer")) {
             document.querySelector(".surfer")
-                .scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                })
-        }
-        if(link.classList.contains("menu__link--services")) {
-            document.querySelector(".services")
                 .scrollIntoView({
                     block: "start",
                     behavior: "smooth",
