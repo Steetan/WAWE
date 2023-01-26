@@ -255,6 +255,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 100px;
+    gap: 30px;
 }
 
 .advantages__blocks2 {
@@ -341,6 +342,10 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 200px;
+}
+
+.surfer__img {
+    width: 100%;
 }
 
 .surfer__desc {
@@ -483,28 +488,27 @@ body {
     margin-bottom: 200px;
 }
 
-.quote__block-title {
+.quote .quote__block-text, .quote .quote__block-title {
     font-style: italic;
-    font-size: 36px;
-    line-height: 111%;
     letter-spacing: 0.6px;
     color: #242121;
 }
 
+.quote__block-title {
+    font-size: 36px;
+    line-height: 111%;
+}
+
 .quote__block-text {
-    font-style: italic;
     font-weight: 300;
     font-size: 14px;
     line-height: 129%;
-    letter-spacing: 0.6px;
-    color: #242121;
     text-align: right;
     margin-right: -150px;
 }
 
 .video {
-    margin: 0 auto;
-    margin-bottom: 200px;
+    margin: 0 auto 200px;
     max-width: 1200px;
     padding: 0 15px;
 }
@@ -512,6 +516,10 @@ body {
 .video__block {
     width: 100%;
     height: 600px;
+}
+
+.video iframe {
+    border: none;
 }
 
 .static {
@@ -548,6 +556,7 @@ body {
     letter-spacing: 0.6px;
     color: #fff;
     z-index: 1;
+    padding-right: 15px;
 }
 
 .blog__text {
@@ -608,7 +617,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .team__img {
@@ -706,6 +715,10 @@ body {
     padding: 200px 15px 200px;
     display: flex;
     justify-content: center;
+}
+
+#map iframe {
+    border: none;
 }
 
 /* contacts */
@@ -831,7 +844,7 @@ body {
 
 @media (max-width: 1240px) {
     .blog__title {
-        font-size: 40px;
+        font-size: 38px;
     }
 }
 
@@ -863,11 +876,6 @@ body {
         display: block;
     }
 
-    .surfer__img {
-        width: 100%;
-        height: auto;
-    }
-
     .about {
         padding: 170px 0;
     }
@@ -891,30 +899,18 @@ body {
 @media (max-width: 1080px) {
     .advantages__blocks {
         justify-content: center;
-        gap: 30px;
     }
 
     .surfer__inner {
         margin-bottom: 170px;
     }
 
-    .footer {
-        padding: 50px 0;
-    }
-}
-
-@media (max-width: 1060px) {
     .team__body {
         justify-content: center;
-        margin: 170px 0;
     }
 }
 
 @media (max-width: 1030px) {
-    .blog__title {
-        font-size: 35px;
-    }
-
     .swiper-pagination-bullet {
         width: 12px;
         height: 12px;
@@ -965,6 +961,14 @@ body {
     #map iframe {
         height: 540px;
     }
+
+    .team__body {
+        margin: 140px 0;
+    }
+
+    .footer {
+        padding: 40px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -973,11 +977,11 @@ body {
     }
 
     .title {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .title::after {
-        font-size: 65px;
+        font-size: 50px;
     }
 
     .about__block {
@@ -1002,10 +1006,6 @@ body {
 
     .swiper {
         margin: 160px 0 140px;
-    }
-
-    .team__body {
-        margin: 130px 0;
     }
 
     .services {
@@ -1058,10 +1058,6 @@ body {
     .swiper {
         margin: 100px 0 100px;
     }
-
-    .footer {
-        padding: 40px 0;
-    }
 }
 
 @media (max-width: 800px) {
@@ -1076,7 +1072,7 @@ body {
     }
 
     .quote__block-text {
-        margin-right: -30px;
+        margin-right: 0;
     }
 
     .blog__title {
@@ -1094,11 +1090,7 @@ body {
 
 @media (max-width: 750px) {
     .video__block {
-        height: 400px;
-    }
-
-    .intro__title {
-        font-size: 170px;
+        height: 350px;
     }
 
     .advantages__waves {
@@ -1132,6 +1124,10 @@ body {
 }
 
 @media (max-width: 660px) {
+    .intro__title {
+        font-size: 150px;
+    }
+
     .blog__title {
         font-size: 20px;
     }
@@ -1151,16 +1147,12 @@ body {
 }
 
 @media (max-width: 600px) {
-    .intro__title {
-        font-size: 140px;
-    }
-
     .intro__subtitle {
         font-size: 20px;
     }
 
-    .video__block {
-        height: 300px;
+    .video {
+        margin-bottom: 130px;
     }
 
     .title {
@@ -1169,14 +1161,6 @@ body {
 
     .title::after {
         font-size: 40px;
-    }
-
-    .about {
-        padding: 100px 0;
-    }
-
-    .about__block {
-        margin-top: 55px;
     }
 
     .advantages {
@@ -1197,14 +1181,6 @@ body {
 
     .gallery__block {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .quote__block-text {
-        margin-right: 0;
-    }
-
-    .video {
-        margin-bottom: 170px;
     }
 
     .static {
@@ -1248,6 +1224,22 @@ body {
 }
 
 @media (max-width: 500px) {
+    .intro__title {
+        font-size: 100px;
+    }
+
+    .intro__subtitle {
+        font-size: 15px;
+    }
+
+    .about {
+        padding: 80px 0;
+    }
+
+    .about__block {
+        margin-top: 40px;
+    }
+
     .gallery {
         padding-bottom: 100px;
     }
@@ -1262,14 +1254,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .intro__title {
-        font-size: 100px;
-    }
-
-    .intro__subtitle {
-        font-size: 15px;
-    }
-
     .blog__img-block {
         top: 35%;
         left: 10%;
@@ -1290,10 +1274,6 @@ body {
 }
 
 @media (max-width: 440px) {
-    .video {
-        margin-bottom: 100px;
-    }
-
     .video__block {
         height: 200px;
     }
@@ -1304,14 +1284,6 @@ body {
 
     .title::after {
         font-size: 30px;
-    }
-
-    .about {
-        padding: 80px 0;
-    }
-
-    .about__block {
-        margin-top: 40px;
     }
 
     .advantages {
@@ -1444,21 +1416,21 @@ body {
     .contacts__desc {
         padding: 25px 35px;
     }
-}
 
-@media (max-width: 340px) {
     .btn {
-        padding: 24px 60px;
+        padding: 23px 60px;
     }
 
     .quote__block-title {
-        font-size: 18px;
+        font-size: 17px;
     }
-}
 
-@media (max-width: 337px) {
+    .quote__block-text {
+        font-size: 12px;
+    }
+
     .advantages__blocks {
-        margin-bottom: 60px;
+        margin-bottom: 55px;
     }
 }
 
@@ -1470,9 +1442,7 @@ body {
     .advantages {
         padding-top: 60px;
     }
-}
 
-@media (max-width: 320px) {
     .gallery {
         padding-bottom: 80px;
     }
