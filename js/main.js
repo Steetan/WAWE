@@ -28,19 +28,24 @@ galleryBtn.forEach(function(e) {
         : (e.innerHTML = "показать еще");
 
         if(e.classList.contains("gallery-1")) {
-            document.querySelector(".gallery__block2.gallery-1").classList.toggle("active")
+            galleryBtnFoo(".gallery__block2.gallery-1")
         }
         if(e.classList.contains("gallery-2")) {
-            document.querySelector(".gallery__block2.gallery-2").classList.toggle("active")
+            galleryBtnFoo(".gallery__block2.gallery-2")
         }
         if(e.classList.contains("gallery-3")) {
-            document.querySelector(".gallery__block2.gallery-3").classList.toggle("active")
+            galleryBtnFoo(".gallery__block2.gallery-3")
         }
         if(e.classList.contains("gallery-4")) {
-            document.querySelector(".gallery__block2.gallery-4").classList.toggle("active")
+            galleryBtnFoo(".gallery__block2.gallery-4")
         }
     })
 })
+
+function galleryBtnFoo(className) {
+    document.querySelector(className)
+        .classList.toggle("active")
+}
 
 galleryLink.forEach(function(choiceItem) {
     choiceItem.addEventListener('click', function(event) {
@@ -58,24 +63,25 @@ galleryLink.forEach(function(choiceItem) {
 
         switch (choiceItem.className) {
             case "gallery__link gallery-1 active":
-                document.querySelector(".gallery__blocks.gallery-1")
-                    .classList.add("active")
+                galleryLinkFoo(".gallery__blocks.gallery-1")
                 break;
             case "gallery__link gallery-2 active":
-                document.querySelector(".gallery__blocks.gallery-2")
-                    .classList.add("active")
+                galleryLinkFoo(".gallery__blocks.gallery-2")
                 break;
             case "gallery__link gallery-3 active":
-                document.querySelector(".gallery__blocks.gallery-3")
-                    .classList.add("active")
+                galleryLinkFoo(".gallery__blocks.gallery-3")
                 break;
             case "gallery__link gallery-4 active":
-                document.querySelector(".gallery__blocks.gallery-4")
-                    .classList.add("active")
+                galleryLinkFoo(".gallery__blocks.gallery-4")
                 break;
         }
     });
 });
+
+function galleryLinkFoo(className) {
+    document.querySelector(className)
+        .classList.add("active")
+}
 
 menuBurger.addEventListener("click", function(e) {
     document.querySelector(".menu")
@@ -97,39 +103,19 @@ menuLink.forEach(function(event) {
 
         switch (event.className) {
             case "menu__link menu__link--surfer":
-                document.querySelector(".surfer")
-                .scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                })
+                menuLinkFoo(".surfer")
                 break;
             case "menu__link menu__link--services":
-                document.querySelector(".services")
-                .scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                })
+                menuLinkFoo(".services")
                 break;
             case "menu__link menu__link--blog":
-                document.querySelector(".blog")
-                .scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                })
+                menuLinkFoo(".blog")
                 break;
             case "menu__link menu__link--team":
-                document.querySelector(".team")
-                .scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                })
+                menuLinkFoo(".team")
                 break;
             case "menu__link menu__link--contacts":
-                document.querySelector(".contacts")
-                .scrollIntoView({
-                    block: "start",
-                    behavior: "smooth",
-                })
+                menuLinkFoo(".contacts")
                 break;
         
         }
@@ -143,3 +129,11 @@ menuLink.forEach(function(event) {
             .classList.remove("menu-burger--open")
      })
 })
+
+function menuLinkFoo(className) {
+    document.querySelector(className)
+    .scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+    })
+}
