@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="items/WAWE-icon.webp" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             <div class="container">
                 <div class="header__body">
                     <div class="logo">
-                        <a class="logo__link" href="#" >
+                        <a class="logo__link" href="index.html" >
                             <img class="logo__img" src="items/logo.svg" alt="wawe" >
                         </a>
                     </div>
@@ -41,6 +42,11 @@
                             <li class="menu__item">
                                 <a class="menu__link menu__link--contacts" href="#">Контакты</a>
                             </li>
+                            <li class="menu__item">
+                                <a class="menu__link menu__link--shop" href="shop.html">
+                                    <img src="items/shop-white.png" alt="" class="menu__link-img">
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="menu-burger">
@@ -50,6 +56,7 @@
             </div>
         </header>
         <main class="main">
+            <button class="up">↑</button>
             <section class="intro">
                 <div class="intro__block">
                     <h1 class="intro__title">WAWE</h1>
@@ -185,226 +192,191 @@
             </seciton>
             <section class="gallery">
                 <div class="container">
-                    <h2 class="title">Галерея</h2>
+                    <h2 class="title title--gallery">Галерея</h2>
                     <div class="gallery__body">
                         <nav class="gallery__menu">
                             <ul class="gallery__list">
                                 <li class="gallery__item">
-                                    <button class="gallery__link active gallery-1">ВСЕ</button>
+                                    <button class="gallery__link active gallery-1">Галерея 1</button>
                                 </li>
                                 <li class="gallery__item">
-                                    <button class="gallery__link gallery-2">ТУРИСТЫ</button>
+                                    <button class="gallery__link gallery-2">Галерея 2</button>
                                 </li>
                                 <li class="gallery__item">
-                                    <button class="gallery__link gallery-3">ПРИРОДА</button>
-                                </li>
-                                <li class="gallery__item">
-                                    <button class="gallery__link gallery-4">ПРОФИ</button>
+                                    <button class="gallery__link gallery-3">Галерея 3</button>
                                 </li>
                             </ul>
                         </nav>
                         <div class="gallery__blocks active gallery-1">
                             <div class="gallery__block">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-1.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-2.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-3.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-4.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-5.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-6.jpg" alt="">
                                 </div>
                             </div>
                             <div class="gallery__block gallery__block2 gallery-1">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-12.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-13.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-7.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-10.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-9.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-11.jpg" alt="">
                                 </div>
                             </div>
                             <button class="btn btn--gallery gallery-1">Показать еще</button>
                         </div>
                         <div class="gallery__blocks gallery-2">
                             <div class="gallery__block">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-18.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-14.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-15.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-16.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-17.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-19.jpg" alt="">
                                 </div>
                             </div>
                             <div class="gallery__block gallery__block2 gallery-2">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-20.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-22.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-23.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-24.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-26.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-21.jpg" alt="">
                                 </div>
                             </div>
                             <button class="btn btn--gallery gallery-2">Показать еще</button>
                         </div>
                         <div class="gallery__blocks gallery-3">
                             <div class="gallery__block">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-35.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-27.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-28.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-29.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-30.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-36.jpg" alt="">
                                 </div>
                             </div>
                             <div class="gallery__block gallery__block2 gallery-3">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-37.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-31.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-32.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-33.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img" src="items/gallery/gallery-34.jpg" alt="">
                                 </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
+                                <div class="gallery__img-block">
+                                    <img class="gallery__block-img img--big" src="items/gallery/gallery-38.jpg" alt="">
                                 </div>
                             </div>
                             <button class="btn btn--gallery gallery-3">Показать еще</button>
                         </div>
-                        <div class="gallery__blocks gallery-4">
-                            <div class="gallery__block">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="gallery__block gallery__block2 gallery-4">
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-1.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-3.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-2.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-5.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-4.jpg" alt="">
-                                </div>
-                                <div class="gallery__block-img">
-                                    <img class="gallery__block-img" src="items/gallery-6.jpg" alt="">
-                                </div>
-                            </div>
-                            <button class="btn btn--gallery gallery-4">Показать еще</button>
+                        <div class="gallery__popup">
+                            <img class="gallery__popup-img" src="" alt="">
+                            <button class="gallery__popup-close"></button>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="quote">
+            <div class="quote active">
                 <div class="quote__block">
                     <q class="quote__block-title">Если сомневаешься – иди катайся.</q>
                     <h5 class="quote__block-text">Нэт Янг, первый Чемпион Мира по сёрфингу</h5>
                 </div>
             </div>
 
-            <div class="video">
-                <iframe class="video__block" src="https://www.youtube.com/watch?v=eSWST13stO4" frameborder="0" allowfullscreen>
-                </iframe>
+            <div class="video-wrapper">
+                <div class="video">
+                    <div class="video__prev">
+                        <img src="items/video.jpg" alt="" class="video__prev" usemap="#video-map">
+                        <img src="items/play-video.png" alt="" class="video__btn-play" usemap="#video-map">    
+                    </div>
+                    <map name="video-map">
+                        <area shape="rect" coords="0, 0, 1920, 1080" alt="Computer" href="https://www.youtube.com/watch?v=LFDaKUHgK7E" target="_blank">
+                    </map>
+                </div>
             </div>
 
             <dl class="static">
                 <div class="static__block">
-                    <dt class="static__num">450</dt>
+                    <dt class="static__num static__num-1">0</dt>
                     <dd class="static__text">туристов</dd>
                 </div>
                 <div class="static__block">
-                    <dt class="static__num">2500</dt>
+                    <dt class="static__num static__num-2">0</dt>
                     <dd class="static__text">часов катания</dd>
                 </div>
                 <div class="static__block">
-                    <dt class="static__num">10</dt>
+                    <dt class="static__num static__num-3">0</dt>
                     <dd class="static__text">проф. тренеров</dd>
                 </div>
                 <div class="static__block">
-                    <dt class="static__num">365</dt>
+                    <dt class="static__num static__num-4">0</dt>
                     <dd class="static__text">дней в году</dd>
                 </div>
             </dl>
@@ -414,74 +386,84 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
-                            </div>
+                                <div class="blog__block-img">
+                                    <img class="blog__img" src="items/blog/blog-img.jpg" alt="">
+                                </div>
+                                <div class="blog__img-block">
+                                    <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
+                                    <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                                </div>
+                                <a href="https://dreamsurf.ru/blog/articles/17-veshchej-kotorye-neobkhodimo-vzyat-v-sjorf-poezdku" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img2.jpg" alt="">
                             </div>
+                            <div class="blog__img-block">
+                                <h3 class="blog__title">КАКАЯ НУЖНА ЭКИПИРОВКА</h3>
+                                <h5 class="blog__text">Необходимые вещи для комфортного отдыха и обучения</h5>
+                            </div>
+                            <a href="https://travelask.ru/other/serfing-snaryazhenie" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img3.jpg" alt="">
                             </div>
+                            <div class="blog__img-block">
+                                <h3 class="blog__title">ОСНОВНЫЕ ОШИБКИ СЕРФИНГА</h3>
+                                <h5 class="blog__text">Топ 10 самых популярных ошибок при серфинге</h5>
+                            </div>
+                            <a href="https://surfbali.ru/surftips/oshibki-nachinayushhix-serferov" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img4.jpg" alt="">
                             </div>
+                            <div class="blog__img-block">
+                                <h3 class="blog__title">СОВЕТЫ НАЧИНАЮЩИМ СЕРФЕРАМ</h3>
+                                <h5 class="blog__text">ТОП 12 советов начинающим</h5>
+                            </div>
+                            <a href="https://www.surfmakers.ru/single-post/12-tips-for-beginners" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img5.jpg" alt="">
                             </div>
+                            <div class="blog__img-block">
+                                <h3 class="blog__title">ОТ ПРОСТОГО К СЛОЖНОМУ</h3>
+                                <h5 class="blog__text">Трюки и маневры в серфинге</h5>
+                            </div>
+                            <a href="https://surf-journal.ru/truki_v_serfinge/" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img6.jpg" alt="">
                             </div>
+                            <div class="blog__img-block">
+                                <h3 class="blog__title">ЧТО ДАЕТ СЕРФИНГ ДУХУ И ТЕЛУ</h3>
+                                <h5 class="blog__text">философия серфинга от Джона Болла до Джерри Лопеса</h5>
+                            </div>
+                            <a href="https://extrim.ironws.com/x-water/surf/filosofiya-serfinga.html" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img7.jpg" alt="">
                             </div>
+                            <div class="blog__img-block">
+                                <h3 class="blog__title">ЙОГА ДЛЯ СЕРФЕРОВ</h3>
+                                <h5 class="blog__text">Самые полезные позы в йоге для серфинга</h5>
+                            </div>
+                            <a href="https://surfway.ru/blog/special-corps/yoga-dlya-serferov-epizod-1/" class="blog-slide-link"></a>
                           </div>
                           <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                            <div class="blog__block-img">
+                                <img class="blog__img" src="items/blog/blog-img8.jpg" alt="">
                             </div>
-                          </div>
-                          <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
                             <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
+                                <h3 class="blog__title">Страх в серфинге - это нормально</h3>
+                                <h5 class="blog__text">Советы новичкам (и не только) от главного российского серфера Севы Шульгина</h5>
                             </div>
-                          </div>
-                          <div class="swiper-slide blog-slide">
-                            <img class="blog__img" src="items/blog-img.jpg" alt="">
-                            <div class="blog__img-block">
-                                <h3 class="blog__title">ЧТО НЕОБХОДИМО ВЗЯТЬ С СОБОЙ НА СЕРФ ТУР</h3>
-                                <h5 class="blog__text">ТОП 20 необходимых вещей для комфортного отдыха и обучения</h5>
-                            </div>
+                            <a href="https://www.sports.ru/tribuna/blogs/windyapp/2894131.html" class="blog-slide-link"></a>
                           </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -494,23 +476,66 @@
                     <div class="team__body">
                         <div class="team__block">
                             <div class="team__block-img">
-                                <img src="items/team-1.jpg" alt="" class="team__img">
+                                <img src="items/team/team-1.jpg" alt="" class="team__img">
+                                <div class="team__icons">
+                                    <a href="https://vk.com/" class="team__icon-link">
+                                        <img src="items/vk.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="https://www.whatsapp.com/" class="team__icon-link">
+                                        <img src="items/whatsapp.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="http://web.telegram.org/" class="team__icon-link">
+                                        <img src="items/telegram.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="http://youtube.com/" class="team__icon-link">
+                                        <img src="items/youtube.svg" alt="" class="team__icon">
+                                    </a>
+                                </div>
                             </div>
                             <h3 class="team__block-title">Mike</h3>
                             <h5 class="team__block-subtitle">Главный инстуктор</h5>
+                            
                         </div>
                         <div class="team__block">
                             <div class="team__block-img">
-                                <img src="items/team-2.jpg" alt="" class="team__img">
+                                <img src="items/team/team-2.jpg" alt="" class="team__img">
+                                <div class="team__icons">
+                                    <a href="https://vk.com/" class="team__icon-link">
+                                        <img src="items/vk.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="https://www.whatsapp.com/" class="team__icon-link">
+                                        <img src="items/whatsapp.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="http://web.telegram.org/" class="team__icon-link">
+                                        <img src="items/telegram.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="http://youtube.com/" class="team__icon-link">
+                                        <img src="items/youtube.svg" alt="" class="team__icon">
+                                    </a>
+                                </div>
                             </div>
                             <h3 class="team__block-title">Mary</h3>
                             <h5 class="team__block-subtitle">инстуктор</h5>
                         </div>
                         <div class="team__block">
                             <div class="team__block-img">
-                                <img src="items/team-3.jpg" alt="" class="team__img">
+                                <img src="items/team/team-3.jpg" alt="" class="team__img">
+                                <div class="team__icons">
+                                    <a href="https://vk.com/" class="team__icon-link">
+                                        <img src="items/vk.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="https://www.whatsapp.com/" class="team__icon-link">
+                                        <img src="items/whatsapp.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="http://web.telegram.org/" class="team__icon-link">
+                                        <img src="items/telegram.svg" alt="" class="team__icon">
+                                    </a>
+                                    <a href="http://youtube.com/" class="team__icon-link">
+                                        <img src="items/youtube.svg" alt="" class="team__icon">
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="team__block-title">Ольга</h3>
+                            <h3 class="team__block-title">Olga</h3>
                             <h5 class="team__block-subtitle">инстуктор</h5>
                         </div>
                     </div>
@@ -570,14 +595,14 @@
 
             <section class="contacts">
                 <div class="container">
-                    <h2 class="title">ОСТАВИТЬ ЗАЯВКУ</h2>
+                    <h2 class="title">ОСТАВИТЬ ОТЗЫВ</h2>
                     <div class="contacts__body">
                         <div class="contacts__main-block">
-                            <form class="contacts__form" action="#" >
-                                <input class="contacts__text" type="text" placeholder="Имя">
-                                <input class="contacts__text" type="tel" placeholder="Телефон">
-                                <textarea class="contacts__text contacts__textarea" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время" maxlength="640"></textarea>
-                                <button class="btn btn--contacts">Отправить</button>
+                            <form class="contacts__form" action="cmnts.php" method="post">
+                                <input type="text" name="name" class="contacts__text" placeholder="Введите ваше имя"></input>
+                                <textarea name="comment" class="contacts__text contacts__textarea" placeholder="Введите сообщение" maxlength="1000"></textarea>
+                                <h5 class="contacts__textarea-value">Осталось символов <span></span></h5>
+                                <input value="Отправить" type="submit" class="btn btn--contacts"/>
                             </form>
                             <div class="contacts__desc">
                                 <div class="contacts__desc-block">
@@ -596,17 +621,18 @@
                             </div>
                         </div>
                         <div class="contacts__chats">
-                            <a class="contacts__chat" href="#">INSTAGRAM</a>
-                            <a class="contacts__chat" href="#">FACEBOOK</a>
-                            <a class="contacts__chat" href="#">YOUTUBE</a>
+                            <a class="contacts__chat" href="https://vk.com/" target="_blank">VKONTAKTE</a>
+                            <a class="contacts__chat" href="https://web.telegram.org/" target="_blank">TELEGRAM</a>
+                            <a class="contacts__chat" href="https://youtube.com/" target="_blank">YOUTUBE</a>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
+            <canvas class="canvas"></canvas>
             <div class="logo logo--footer">
-                <a class="logo__link" href="#" >
+                <a class="logo__link" href="index.html" >
                     <img class="logo__img" src="items/logo.svg" alt="wawe" >
                 </a>
             </div>
